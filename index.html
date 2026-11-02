@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Лог-Арт — транспортная компания в Пятигорске</title>
+  <meta name="description" content="Лог-Арт — грузоперевозки из Пятигорска и Кавказских Минеральных Вод по России. Расчёт стоимости и заявка онлайн.">
+  <link rel="icon" href="assets/mark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header" id="top">
+  <div class="container header__inner">
+    <a href="#top" class="header__logo" aria-label="Лог-Арт — на главную">
+      <img src="assets/logo.png" alt="Лог-Арт, транспортная компания" width="132" height="108">
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#services">Услуги</a>
+      <a href="#fleet">Автопарк</a>
+      <a href="#why">Почему мы</a>
+      <a href="#steps">Как работаем</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <!-- TODO: заменить на реальный номер -->
+    <a class="header__phone" href="tel:+79000000000">+7 (900) 000-00-00</a>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero__road" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <p class="eyebrow">Пятигорск · Кавминводы · вся Россия</p>
+        <h1>Доставим ваш груз <span class="accent">точно в срок</span></h1>
+        <p class="hero__lead">Грузоперевозки по Кавказским Минеральным Водам, России и за её пределы. Сами подберём машину, маршрут и рассчитаем стоимость.</p>
+        <div class="hero__actions">
+          <a href="#request" class="btn btn--primary">Рассчитать перевозку</a>
+          <a href="tel:+79000000000" class="btn btn--ghost">Позвонить</a>
+        </div>
+        <ul class="hero__facts">
+          <li><b>Договор</b><span>работаем официально</span></li>
+          <li><b>24/7</b><span>на связи с водителем</span></li>
+          <li><b>от 1 часа</b><span>подача машины</span></li>
+        </ul>
+      </div>
+      <div class="hero__visual">
+        <img src="assets/mark.png" alt="" width="466" height="323">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="container">
+      <p class="eyebrow">Услуги</p>
+      <h2>Что мы перевозим</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card__icon"><svg viewBox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg></div>
+          <h3>Междугородние перевозки</h3>
+          <p>Отдельная машина под ваш груз из КМВ в любой город России.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon"><svg viewBox="0 0 24 24"><path d="M4 8l8-4 8 4v8l-8 4-8-4z"/><path d="M4 8l8 4 8-4M12 12v8"/></svg></div>
+          <h3>Сборные грузы</h3>
+          <p>Небольшая партия? Догрузим к попутной машине — платите только за свой объём.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4c2.5 2.5 2.5 13.5 0 16M12 4c-2.5 2.5-2.5 13.5 0 16"/></svg></div>
+          <h3>Международные перевозки</h3>
+          <p>Доставка в страны СНГ и обратно, помощь с документами.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div>
+          <h3>Доставка по КМВ</h3>
+          <p>Пятигорск, Кисловодск, Ессентуки, Минводы, Железноводск — в день обращения.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon"><svg viewBox="0 0 24 24"><path d="M12 3v6M8 7l4 4 4-4"/><rect x="4" y="13" width="16" height="7" rx="1"/></svg></div>
+          <h3>Погрузка и разгрузка</h3>
+          <p>Грузчики, упаковка и крепление груза — чтобы он доехал целым.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div>
+          <h3>Страхование груза</h3>
+          <p>По желанию страхуем груз на всю стоимость на время перевозки.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TODO: уточнить у клиента реальный автопарк и добавить фото машин -->
+  <section class="section section--gray" id="fleet">
+    <div class="container">
+      <p class="eyebrow">Автопарк</p>
+      <h2>Машина под любой груз</h2>
+      <div class="fleet">
+        <article class="fleet__item">
+          <div class="fleet__img" aria-hidden="true"><svg viewBox="0 0 120 50"><rect x="4" y="10" width="62" height="28" rx="3"/><path d="M66 18h20l12 10v10H66z"/><circle cx="22" cy="40" r="7"/><circle cx="84" cy="40" r="7"/></svg></div>
+          <h3>Газель</h3>
+          <dl><div><dt>Грузоподъёмность</dt><dd>до 1,5 т</dd></div><div><dt>Объём</dt><dd>до 16 м³</dd></div></dl>
+        </article>
+        <article class="fleet__item">
+          <div class="fleet__img" aria-hidden="true"><svg viewBox="0 0 120 50"><rect x="4" y="6" width="74" height="32" rx="3"/><path d="M78 16h18l14 12v10H78z"/><circle cx="22" cy="40" r="7"/><circle cx="40" cy="40" r="7"/><circle cx="94" cy="40" r="7"/></svg></div>
+          <h3>Среднетоннажник</h3>
+          <dl><div><dt>Грузоподъёмность</dt><dd>до 5 т</dd></div><div><dt>Объём</dt><dd>до 36 м³</dd></div></dl>
+        </article>
+        <article class="fleet__item">
+          <div class="fleet__img" aria-hidden="true"><svg viewBox="0 0 120 50"><rect x="2" y="4" width="88" height="34" rx="2"/><path d="M92 14h14l12 12v12H92z"/><circle cx="16" cy="40" r="6"/><circle cx="30" cy="40" r="6"/><circle cx="72" cy="40" r="6"/><circle cx="104" cy="40" r="6"/></svg></div>
+          <h3>Фура</h3>
+          <dl><div><dt>Грузоподъёмность</dt><dd>до 20 т</dd></div><div><dt>Объём</dt><dd>до 82 м³</dd></div></dl>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark" id="why">
+    <div class="container">
+      <p class="eyebrow">Почему мы</p>
+      <h2>Работаем на результат</h2>
+      <div class="why">
+        <div class="why__item"><span class="why__num">01</span><h3>Прозрачная цена</h3><p>Называем стоимость до начала работы. Без доплат «по факту».</p></div>
+        <div class="why__item"><span class="why__num">02</span><h3>Сроки по договору</h3><p>Фиксируем дату доставки и отвечаем за неё.</p></div>
+        <div class="why__item"><span class="why__num">03</span><h3>Груз под контролем</h3><p>Сообщаем, где машина, на любом этапе пути.</p></div>
+        <div class="why__item"><span class="why__num">04</span><h3>Для бизнеса и частных лиц</h3><p>Наличный и безналичный расчёт, все закрывающие документы.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="steps">
+    <div class="container">
+      <p class="eyebrow">Как работаем</p>
+      <h2>Четыре шага до доставки</h2>
+      <ol class="steps">
+        <li><h3>Заявка</h3><p>Оставляете заявку на сайте или звоните нам.</p></li>
+        <li><h3>Расчёт</h3><p>Подбираем машину и называем точную стоимость.</p></li>
+        <li><h3>Погрузка</h3><p>Подаём машину в удобное время и подписываем документы.</p></li>
+        <li><h3>Доставка</h3><p>Привозим груз и держим вас в курсе всю дорогу.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section--gray" id="request">
+    <div class="container request">
+      <div class="request__text">
+        <p class="eyebrow">Заявка</p>
+        <h2>Рассчитаем стоимость за 15 минут</h2>
+        <p>Заполните форму, и мы свяжемся с вами. Можно и проще: позвоните или напишите в мессенджер.</p>
+        <div class="request__links">
+          <a href="tel:+79000000000" class="btn btn--ghost-dark">+7 (900) 000-00-00</a>
+          <a href="#" class="btn btn--ghost-dark" data-wa>WhatsApp</a>
+          <a href="#" class="btn btn--ghost-dark" data-tg>Telegram</a>
+        </div>
+      </div>
+      <form class="form" id="form" novalidate>
+        <div class="form__row">
+          <label>Откуда<input name="from" placeholder="Пятигорск" required></label>
+          <label>Куда<input name="to" placeholder="Москва" required></label>
+        </div>
+        <div class="form__row">
+          <label>Вес, кг<input name="weight" inputmode="numeric" placeholder="1500"></label>
+          <label>Объём, м³<input name="volume" inputmode="decimal" placeholder="10"></label>
+        </div>
+        <label>Что везём<input name="cargo" placeholder="Мебель, стройматериалы, продукты…"></label>
+        <div class="form__row">
+          <label>Имя<input name="name" placeholder="Ваше имя" required></label>
+          <label>Телефон<input name="phone" type="tel" placeholder="+7" required></label>
+        </div>
+        <button class="btn btn--primary btn--full" type="submit">Отправить заявку в WhatsApp</button>
+        <p class="form__note" id="formNote">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="section" id="contacts">
+    <div class="container contacts">
+      <div>
+        <p class="eyebrow">Контакты</p>
+        <h2>Мы в Пятигорске</h2>
+        <!-- TODO: заменить на реальные контакты -->
+        <ul class="contacts__list">
+          <li><span>Телефон</span><a href="tel:+79000000000">+7 (900) 000-00-00</a></li>
+          <li><span>Почта</span><a href="mailto:info@log-art.ru">info@log-art.ru</a></li>
+          <li><span>Адрес</span>г. Пятигорск, адрес уточняется</li>
+          <li><span>Режим работы</span>Пн–Сб, 9:00–19:00</li>
+        </ul>
+      </div>
+      <div class="contacts__map">
+        <iframe title="Карта: Пятигорск" src="https://yandex.ru/map-widget/v1/?ll=43.059%2C44.041&z=12" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <img src="assets/mark.png" alt="" width="60" height="42">
+    <p>© <span id="year">2026</span> Лог-Арт — транспортная компания, Пятигорск</p>
+    <a href="#top">Наверх ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
