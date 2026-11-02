@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Автопарк — Газели, грузовики, фуры | Лог-Арт</title>
+  <meta name="description" content="Лог-Арт — грузоперевозки из Пятигорска и Кавказских Минеральных Вод по России. Расчёт стоимости и заявка онлайн.">
+  <link rel="icon" href="assets/mark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header" id="top">
+  <div class="container header__inner">
+    <a href="index.html" class="header__logo" aria-label="Лог-Арт — на главную">
+      <img src="assets/logo.png" alt="Лог-Арт, транспортная компания" width="132" height="108">
+    </a>
+    <nav class="nav" id="nav">
+      <a href="index.html">Главная</a>
+      <a href="uslugi.html">Услуги</a>
+      <a href="avtopark.html" class="is-active">Автопарк</a>
+      <a href="o-kompanii.html">О компании</a>
+      <a href="kontakty.html">Контакты</a>
+    </nav>
+    <!-- TODO: заменить на реальный номер -->
+    <a class="header__phone" href="tel:+79000000000">+7 (900) 000-00-00</a>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="hero__road" aria-hidden="true"></div>
+    <div class="container">
+      <p class="crumbs"><a href="index.html">Главная</a> / Автопарк</p>
+      <h1>Автопарк</h1>
+      <p class="page-hero__lead">Подберём машину под ваш груз — чтобы не переплачивать за лишний объём.</p>
+    </div>
+  </section>
+  <!-- TODO: заменить на реальный автопарк и фото машин клиента -->
+  <section class="section">
+    <div class="container">
+      <div class="fleet">
+        <article class="fleet__item">
+          <div class="fleet__img" aria-hidden="true"><svg viewBox="0 0 120 50"><rect x="4" y="10" width="62" height="28" rx="3"/><path d="M66 18h20l12 10v10H66z"/><circle cx="22" cy="40" r="7"/><circle cx="84" cy="40" r="7"/></svg></div>
+          <h3>Газель</h3>
+          <dl><div><dt>Грузоподъёмность</dt><dd>до 1,5 т</dd></div><div><dt>Объём</dt><dd>до 16 м³</dd></div><div><dt>Кузов</dt><dd>4,2 × 2,0 × 2,0 м</dd></div></dl>
+          <p class="fleet__use">Переезды, доставка по КМВ, небольшие партии</p>
+        </article>
+        <article class="fleet__item">
+          <div class="fleet__img" aria-hidden="true"><svg viewBox="0 0 120 50"><rect x="4" y="6" width="74" height="32" rx="3"/><path d="M78 16h18l14 12v10H78z"/><circle cx="22" cy="40" r="7"/><circle cx="40" cy="40" r="7"/><circle cx="94" cy="40" r="7"/></svg></div>
+          <h3>Среднетоннажник</h3>
+          <dl><div><dt>Грузоподъёмность</dt><dd>до 5 т</dd></div><div><dt>Объём</dt><dd>до 36 м³</dd></div><div><dt>Кузов</dt><dd>6,2 × 2,4 × 2,4 м</dd></div></dl>
+          <p class="fleet__use">Мебель, стройматериалы, товары для магазинов</p>
+        </article>
+        <article class="fleet__item">
+          <div class="fleet__img" aria-hidden="true"><svg viewBox="0 0 120 50"><rect x="2" y="4" width="88" height="34" rx="2"/><path d="M92 14h14l12 12v12H92z"/><circle cx="16" cy="40" r="6"/><circle cx="30" cy="40" r="6"/><circle cx="72" cy="40" r="6"/><circle cx="104" cy="40" r="6"/></svg></div>
+          <h3>Фура</h3>
+          <dl><div><dt>Грузоподъёмность</dt><dd>до 20 т</dd></div><div><dt>Объём</dt><dd>до 82 м³</dd></div><div><dt>Кузов</dt><dd>13,6 × 2,45 × 2,5 м</dd></div></dl>
+          <p class="fleet__use">Крупные партии, межгород и международные рейсы</p>
+        </article>
+      </div>
+      <div class="note">
+        <b>Не знаете, какая машина нужна?</b> Опишите груз — мы подберём транспорт сами.
+        <a href="kontakty.html#request">Оставить заявку →</a>
+      </div>
+    </div>
+  </section>
+  <section class="cta">
+    <div class="container cta__inner">
+      <div>
+        <h2>Нужно перевезти груз?</h2>
+        <p>Оставьте заявку — рассчитаем стоимость за 15 минут.</p>
+      </div>
+      <a href="kontakty.html#request" class="btn btn--light">Оставить заявку</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <img src="assets/mark.png" alt="" width="70" height="49">
+      <p>Транспортная компания «Лог-Арт». Грузоперевозки из Пятигорска по России и СНГ.</p>
+    </div>
+    <nav>
+      <h4>Разделы</h4>
+      <a href="uslugi.html">Услуги</a>
+      <a href="avtopark.html">Автопарк</a>
+      <a href="o-kompanii.html">О компании</a>
+      <a href="kontakty.html">Контакты</a>
+    </nav>
+    <div>
+      <h4>Связь</h4>
+      <a href="tel:+79000000000">+7 (900) 000-00-00</a>
+      <a href="mailto:info@log-art.ru">info@log-art.ru</a>
+      <span>г. Пятигорск</span>
+    </div>
+  </div>
+  <div class="container footer__bottom">© <span id="year">2026</span> Лог-Арт</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
