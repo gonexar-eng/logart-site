@@ -232,6 +232,17 @@ a.card { display: block; color: inherit; }
 .audience__card .checks { margin-top: 18px; }
 .form--bordered { border: 1px solid var(--line); }
 
+/* Jobs */
+.jobs { display: grid; grid-template-columns: 1.3fr .7fr; gap: 48px; align-items: center; }
+.jobs .checks li { color: #fff; }
+.jobs__actions { margin-top: 28px; }
+.jobs__pay { background: var(--red); color: #fff; border-radius: var(--radius); padding: 40px 32px; text-align: center; display: grid; gap: 6px; }
+.jobs__pay span { font: 700 14px "Montserrat", sans-serif; letter-spacing: .14em; text-transform: uppercase; opacity: .85; }
+.jobs__pay b { font: 900 clamp(40px, 6vw, 60px)/1.1 "Montserrat", sans-serif; }
+.jobs__pay small { font-size: .45em; font-weight: 700; }
+.jobs__pay em { font: 700 18px "Montserrat", sans-serif; font-style: normal; }
+.footer__legal { margin-top: 10px !important; font-size: 13px; }
+
 /* Footer */
 .footer { background: var(--ink); color: var(--gray); padding: 56px 0 0; font-size: 15px; }
 .footer__grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; }
@@ -256,7 +267,7 @@ a.card { display: block; color: inherit; }
   .cards, .fleet { grid-template-columns: repeat(2, 1fr); }
   .why, .steps { grid-template-columns: repeat(2, 1fr); }
   .steps li::after { display: none; }
-  .request, .contacts, .about, .services, .audience { grid-template-columns: 1fr; }
+  .request, .contacts, .about, .services, .audience, .jobs { grid-template-columns: 1fr; }
   .tiles { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 720px) {

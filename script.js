@@ -1,6 +1,4 @@
-// TODO: вписать реальные контакты компании
-const WHATSAPP_PHONE = "79000000000"; // только цифры, без +
-const TELEGRAM_USER = "logart";       // ник в Telegram без @
+const WHATSAPP_PHONE = "79331763555"; // только цифры, без +
 
 const burger = document.getElementById("burger");
 const nav = document.getElementById("nav");
@@ -17,7 +15,9 @@ nav.querySelectorAll("a").forEach((link) =>
 );
 
 document.querySelectorAll("[data-wa]").forEach((a) => (a.href = `https://wa.me/${WHATSAPP_PHONE}`));
-document.querySelectorAll("[data-tg]").forEach((a) => (a.href = `https://t.me/${TELEGRAM_USER}`));
+document.querySelectorAll("[data-wa-job]").forEach(
+  (a) => (a.href = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent("Здравствуйте! Хочу работать водителем категории E.")}`)
+);
 
 // Форма собирает заявку в сообщение и открывает WhatsApp — сервер не нужен
 const form = document.getElementById("form");
