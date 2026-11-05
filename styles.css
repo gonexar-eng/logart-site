@@ -91,7 +91,6 @@ p { margin: 0 0 1em; }
 .hero__facts span { font-size: 14px; color: var(--gray); }
 .hero__visual img {
   width: 100%; animation: float 6s ease-in-out infinite;
-  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, .5));
   -webkit-mask-image: linear-gradient(to bottom, #000 62%, transparent 98%);
   mask-image: linear-gradient(to bottom, #000 62%, transparent 98%);
 }
