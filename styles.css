@@ -248,6 +248,16 @@ a.card { display: block; color: inherit; }
 .jobs__pay em { font: 700 18px "Montserrat", sans-serif; font-style: normal; }
 .footer__legal { margin-top: 10px !important; font-size: 13px; }
 
+/* Truck */
+.truck { display: grid; grid-template-columns: .9fr 1.1fr; gap: 40px; align-items: center; background: #fff; border-radius: var(--radius); padding: 36px; box-shadow: var(--shadow); }
+.truck svg { width: 100%; height: auto; }
+.truck h3 { font-size: 21px; margin-bottom: 18px; }
+.truck dl { margin: 0; }
+.truck dl div { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid var(--line); }
+.truck dt { color: var(--gray); }
+.truck dd { margin: 0; font-weight: 600; color: var(--ink); text-align: right; }
+.note--warn { border-left-color: var(--gray); background: var(--gray-light); }
+
 /* Footer */
 .footer { background: var(--ink); color: var(--gray); padding: 56px 0 0; font-size: 15px; }
 .footer__grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; }
@@ -272,12 +282,13 @@ a.card { display: block; color: inherit; }
   .cards, .fleet { grid-template-columns: repeat(2, 1fr); }
   .why, .steps { grid-template-columns: repeat(2, 1fr); }
   .steps li::after { display: none; }
-  .request, .contacts, .about, .services, .audience, .jobs { grid-template-columns: 1fr; }
+  .request, .contacts, .about, .services, .audience, .jobs, .truck { grid-template-columns: 1fr; }
   .tiles { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 720px) {
   .section { padding: 64px 0; }
   .hero { padding: 56px 0 64px; }
+  .hero h1 { font-size: clamp(26px, 8.4vw, 34px); hyphens: auto; }
   .hero__inner { grid-template-columns: 1fr; }
   .hero__visual { order: -1; max-width: 240px; }
   .hero__facts { gap: 22px; margin-top: 36px; }
@@ -292,8 +303,9 @@ a.card { display: block; color: inherit; }
   .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
   .tile { padding: 16px 14px; }
   .tile b { font-size: 15px; hyphens: auto; overflow-wrap: anywhere; }
-  .tile span { font-size: 13px; }
+  .tile span { font-size: 13px; hyphens: auto; overflow-wrap: anywhere; }
   .audience__card { padding: 24px; }
+  .truck { padding: 22px; gap: 20px; }
   .section__head { display: block; }
   .link-more { display: inline-block; margin: -1em 0 1.4em; }
   .service { flex-direction: column; padding: 24px; }
