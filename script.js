@@ -1,4 +1,4 @@
-const WHATSAPP_PHONE = "79331763555"; // только цифры, без +
+const WHATSAPP_PHONE = "79283182149"; // только цифры, без +
 
 const burger = document.getElementById("burger");
 const nav = document.getElementById("nav");
