@@ -250,6 +250,7 @@ a.card { display: block; color: inherit; }
 /* Truck */
 .truck { display: grid; grid-template-columns: .9fr 1.1fr; gap: 40px; align-items: center; background: #fff; border-radius: var(--radius); padding: 36px; box-shadow: var(--shadow); }
 .truck svg { width: 100%; height: auto; }
+.truck__photo { width: 100%; height: auto; display: block; border-radius: calc(var(--radius) - 4px); object-fit: cover; aspect-ratio: 1200 / 733; }
 .truck h3 { font-size: 21px; margin-bottom: 18px; }
 .truck dl { margin: 0; }
 .truck dl div { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid var(--line); }

@@ -15,6 +15,11 @@ nav.querySelectorAll("a").forEach((link) =>
 );
 
 document.querySelectorAll("[data-wa]").forEach((a) => (a.href = `https://wa.me/${WHATSAPP_PHONE}`));
+document.querySelectorAll("[data-tg]").forEach((a) => {
+  a.href = `https://t.me/+${WHATSAPP_PHONE}`;
+  a.target = "_blank";
+  a.rel = "noopener";
+});
 document.querySelectorAll("[data-wa-job]").forEach(
   (a) => (a.href = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent("Здравствуйте! Хочу работать водителем категории E.")}`)
 );
