@@ -1,4 +1,5 @@
-const WHATSAPP_PHONE = "79283182149"; // только цифры, без +
+const WHATSAPP_PHONE = "79283182149"; // диспетчер, только цифры, без +
+const JOB_PHONE = "79331763555"; // номер для водителей (вакансии)
 
 const burger = document.getElementById("burger");
 const nav = document.getElementById("nav");
@@ -20,8 +21,13 @@ document.querySelectorAll("[data-tg]").forEach((a) => {
   a.target = "_blank";
   a.rel = "noopener";
 });
+document.querySelectorAll("[data-tg-job]").forEach((a) => {
+  a.href = `https://t.me/+${JOB_PHONE}`;
+  a.target = "_blank";
+  a.rel = "noopener";
+});
 document.querySelectorAll("[data-wa-job]").forEach(
-  (a) => (a.href = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent("Здравствуйте! Хочу работать водителем категории E.")}`)
+  (a) => (a.href = `https://wa.me/${JOB_PHONE}?text=${encodeURIComponent("Здравствуйте! Хочу работать водителем категории E.")}`)
 );
 
 // Форма собирает заявку в сообщение и открывает WhatsApp — сервер не нужен
