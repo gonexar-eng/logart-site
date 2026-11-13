@@ -1,5 +1,5 @@
 const WHATSAPP_PHONE = "79283182149"; // диспетчер, только цифры, без +
-const JOB_PHONE = "79331763555"; // номер для водителей (вакансии)
+const JOB_PHONE = WHATSAPP_PHONE; // вакансии — тот же основной номер
 
 const burger = document.getElementById("burger");
 const nav = document.getElementById("nav");
